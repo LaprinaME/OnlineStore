@@ -1,0 +1,21 @@
+﻿<Window x:Class="OnlineStore.Views.PickupPointsWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:OnlineStore.Views"
+        mc:Ignorable="d"
+        Title="PickupPointsWindow" Height="450" Width="500">
+    <Grid>
+        <DataGrid ItemsSource="{Binding Пункты_выдачи}" AutoGenerateColumns="False">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Код ПВЗ" Binding="{Binding Код_Пункта_выдачи}" />
+                <DataGridTextColumn Header="Оборот заказов" Binding="{Binding Оборот_заказов}" />
+                <DataGridTextColumn Header="Рейтинг пункта выдачи" Binding="{Binding Рейтинг_пункта_выдачи}" />
+                <DataGridTextColumn Header="Количество доступных мест" Binding="{Binding Количество_доступных_мест}" />
+                <DataGridTextColumn Header="Адрес" Binding="{Binding Адрес}" />
+            </DataGrid.Columns>
+        </DataGrid>
+        <Button Content="Вернуться на главную" Margin="10" Command="{Binding ReturnToMainCommand}" HorizontalAlignment="Center" VerticalAlignment="Bottom"/>
+    </Grid>
+</Window>

@@ -12,9 +12,9 @@ namespace OnlineStore.Models
 
         public string Пароль { get; set; }
 
-        [ForeignKey("Роль")]
+        [ForeignKey("Код_Роли")]
         public int Код_Роли { get; set; }
 
-        public Роль Роль { get; set; }
+        public Роли Роли { get; set; }
     }
 }

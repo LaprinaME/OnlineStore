@@ -1,0 +1,23 @@
+﻿<Window x:Class="OnlineStore.Views.MenuWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Меню" Height="300" Width="400">
+    <Grid>
+        <StackPanel VerticalAlignment="Center">
+            <!-- Кнопка для перехода на страницу "ProductsWindow" -->
+            <Button Content="Товары" Margin="10" Padding="10" Click="ProductsWindow_Click"/>
+
+            <!-- Кнопка для перехода на страницу "PickupPointsWindow" -->
+            <Button Content="Пункты выдачи" Margin="10" Padding="10" Click="PickupPointsWindow_Click"/>
+
+            <!-- Кнопка для перехода на главную страницу "MainWindow" -->
+            <Button Content="Главное меню" Margin="10" Padding="10" Click="MainWindow_Click"/>
+
+            <!-- Кнопка для перехода на страницу "DeleteProductWindow" -->
+            <Button Content="Удаление товара" Margin="10" Padding="10" Click="DeleteProductWindow_Click"/>
+
+            <!-- Кнопка для перехода на страницу "AddProductWindow" -->
+            <Button Content="Добавление товара" Margin="10" Padding="10" Click="AddProductWindow_Click"/>
+        </StackPanel>
+    </Grid>
+</Window>

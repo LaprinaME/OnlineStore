@@ -48,8 +48,8 @@ namespace OnlineStore.DataContext
         // Переопределение метода OnConfiguring для указания строки подключения к базе данных
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            // Использование SQL Server в качестве провайдера базы данных и указание строки подключения
-            optionsBuilder.UseSqlServer("Server=(localdb)\\Local;Database=Онлайн_магазин;Integrated Security=True;");
+            // Использование SQL Server в качестве провайдера базы данных и указание строки подключения к вашему серверу DESKTOP-DFJ77GS
+            optionsBuilder.UseSqlServer("Server=DESKTOP-DFJ77GS;Database=Онлайн_магазин;Integrated Security=True;Connect Timeout=30;Encrypt=False;");
         }
     }
 }
